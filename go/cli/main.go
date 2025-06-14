@@ -13,6 +13,8 @@ import (
 	"github.com/n4sust1m/nlp100_2025/pkg/p07"
 	"github.com/n4sust1m/nlp100_2025/pkg/p08"
 	"github.com/n4sust1m/nlp100_2025/pkg/p09"
+	"github.com/n4sust1m/nlp100_2025/pkg/p10"
+	"github.com/n4sust1m/nlp100_2025/pkg/p11"
 )
 
 func main() {
@@ -43,5 +45,11 @@ func main() {
 		p08.Run()
 	case "p09":
 		p09.Run()
+	case "p10":
+		p10.Run()
+	case "p11":
+		p11.Run()
+	default:
+		panic("Unimplemented Error")
 	}
 }
