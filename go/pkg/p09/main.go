@@ -1,4 +1,4 @@
-package main
+package p09
 
 import (
 	"fmt"
@@ -7,7 +7,7 @@ import (
 	"time"
 )
 
-func main() {
+func Run() {
 	rand.New(rand.NewSource(time.Now().UnixNano()))
 
 	v1 := "I couldn’t believe that I could actually understand what I was reading : the phenomenal power of the human mind ."

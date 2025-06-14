@@ -1,11 +1,11 @@
-package main
+package p03
 
 import (
 	"fmt"
 	"regexp"
 )
 
-func main() {
+func Run() {
 	v1 := "Now I need a drink, alcoholic of course, after the heavy lectures involving quantum mechanics."
 
 	splitted := regexp.MustCompile(`[\s\,\.]+`).Split(v1, -1)

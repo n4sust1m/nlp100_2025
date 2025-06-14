@@ -1,11 +1,11 @@
-package main
+package p05
 
 import (
 	"fmt"
 	"strings"
 )
 
-func main() {
+func Run() {
 	v1 := "I am an NLPer"
 
 	fmt.Println("By character")

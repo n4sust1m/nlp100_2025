@@ -1,8 +1,8 @@
-package main
+package p06
 
 import "fmt"
 
-func main() {
+func Run() {
 	v1 := "paraparaparadise"
 	v2 := "paragraph"
 

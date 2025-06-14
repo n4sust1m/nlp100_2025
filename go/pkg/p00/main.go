@@ -1,8 +1,8 @@
-package main
+package p00
 
 import "fmt"
 
-func main() {
+func Run() {
 	v1 := []rune("パトカー")
 	v2 := []rune("タクシー")
 

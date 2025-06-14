@@ -1,8 +1,8 @@
-package main
+package p01
 
 import "fmt"
 
-func main() {
+func Run() {
 	v1 := []rune("パタトクカシーー")
 
 	var result string

@@ -1,8 +1,8 @@
-package main
+package p08
 
 import "fmt"
 
-func main() {
+func Run() {
 	v1 := "週刊ascii"
 	fmt.Printf("%+v\n", cipher(v1))
 	fmt.Printf("%+v\n", cipher(cipher(v1)))

@@ -1,8 +1,8 @@
-package main
+package p07
 
 import "fmt"
 
-func main() {
+func Run() {
 	fmt.Printf("%+v\n", printWithTemplate(12, "気温", 22.4))
 }
 

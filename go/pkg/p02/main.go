@@ -1,8 +1,8 @@
-package main
+package p02
 
 import "fmt"
 
-func main() {
+func Run() {
 	v1 := "stressed"
 
 	var result string
