@@ -1,4 +1,4 @@
-package p11
+package p12
 
 import (
 	"fmt"
@@ -9,7 +9,7 @@ import (
 const N int = 10
 
 func Run() {
-	r, err := getInitialCharacters("../assets/popular-names.txt")
+	r, err := getFinalCharacters("../assets/popular-names.txt")
 	if err != nil {
 		panic(fmt.Sprintf("err: %+v", err))
 	}
@@ -17,7 +17,7 @@ func Run() {
 	fmt.Println(*r)
 }
 
-func getInitialCharacters(fileName string) (*string, error) {
+func getFinalCharacters(fileName string) (*string, error) {
 	bytes, err := os.ReadFile(fileName)
 	if err != nil {
 		return nil, err
@@ -27,8 +27,8 @@ func getInitialCharacters(fileName string) (*string, error) {
 
 	var sb strings.Builder
 	for _, l := range lines {
-		limit := min(len(l), N)
-		sb.WriteString(l[:limit] + "\n")
+		limit := max(len(l)-N, 0)
+		sb.WriteString(l[limit:] + "\n")
 	}
 	result := sb.String()
 	return &result, nil
