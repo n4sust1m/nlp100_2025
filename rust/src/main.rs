@@ -1,3 +1,11 @@
+use std::env;
+
+mod p00;
+
 fn main() {
-    println!("Hello, world!");
+   let args: Vec<String> = env::args().collect();
+
+   if args[1] == "p00" {
+        p00::run();
+   }
 }
