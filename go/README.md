@@ -1,5 +1,5 @@
 ## Usage
 
 ```bash
-go run pkg/p00.go
+go run pkg/p00/main.go
 ```
