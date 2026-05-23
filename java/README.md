@@ -3,7 +3,7 @@
 ### Run code
 
 ```bash
-java src/p00.java
+./gradlew run -PmainClass=P00
 ```
 
 ### Formar code
